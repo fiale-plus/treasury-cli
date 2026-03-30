@@ -1,0 +1,265 @@
+export const DEBT_TO_PENNY_RESPONSE = {
+  data: [
+    {
+      record_date: "2024-01-25",
+      debt_held_public_amt: "26900000000000.00",
+      intragov_hold_amt: "6800000000000.00",
+      tot_pub_debt_out_amt: "34100000000000.00",
+      src_line_nbr: "1",
+      record_fiscal_year: "2024",
+      record_fiscal_quarter: "2",
+      record_calendar_year: "2024",
+      record_calendar_quarter: "1",
+      record_calendar_month: "01",
+      record_calendar_day: "25",
+    },
+  ],
+  meta: {
+    count: 1,
+    labels: {
+      record_date: "Record Date",
+      tot_pub_debt_out_amt: "Total Public Debt Outstanding",
+    },
+    dataTypes: {
+      record_date: "DATE",
+      tot_pub_debt_out_amt: "CURRENCY",
+    },
+    dataFormats: {
+      record_date: "YYYY-MM-DD",
+      tot_pub_debt_out_amt: "$10,000,000,000.00",
+    },
+    "total-count": 1,
+    "total-pages": 1,
+  },
+  links: {
+    self: "&page%5Bnumber%5D=1&page%5Bsize%5D=1",
+    first: "&page%5Bnumber%5D=1&page%5Bsize%5D=1",
+    prev: null,
+    next: null,
+    last: "&page%5Bnumber%5D=1&page%5Bsize%5D=1",
+  },
+};
+
+export const AVG_INTEREST_RATES_RESPONSE = {
+  data: [
+    {
+      record_date: "2024-01-31",
+      security_type_desc: "Marketable",
+      security_desc: "Treasury Bills",
+      avg_interest_rate_amt: "5.287",
+      src_line_nbr: "1",
+      record_fiscal_year: "2024",
+      record_fiscal_quarter: "2",
+      record_calendar_year: "2024",
+      record_calendar_quarter: "1",
+      record_calendar_month: "01",
+      record_calendar_day: "31",
+    },
+    {
+      record_date: "2024-01-31",
+      security_type_desc: "Marketable",
+      security_desc: "Treasury Notes",
+      avg_interest_rate_amt: "2.789",
+      src_line_nbr: "2",
+      record_fiscal_year: "2024",
+      record_fiscal_quarter: "2",
+      record_calendar_year: "2024",
+      record_calendar_quarter: "1",
+      record_calendar_month: "01",
+      record_calendar_day: "31",
+    },
+  ],
+  meta: {
+    count: 2,
+    labels: {
+      record_date: "Record Date",
+      security_desc: "Security Description",
+      avg_interest_rate_amt: "Average Interest Rate Amount",
+    },
+    dataTypes: {
+      record_date: "DATE",
+      avg_interest_rate_amt: "PERCENTAGE",
+    },
+    dataFormats: {
+      record_date: "YYYY-MM-DD",
+      avg_interest_rate_amt: "10.000%",
+    },
+    "total-count": 2,
+    "total-pages": 1,
+  },
+  links: {
+    self: "&page%5Bnumber%5D=1&page%5Bsize%5D=100",
+    first: "&page%5Bnumber%5D=1&page%5Bsize%5D=100",
+    prev: null,
+    next: null,
+    last: "&page%5Bnumber%5D=1&page%5Bsize%5D=100",
+  },
+};
+
+export const OPERATING_CASH_RESPONSE = {
+  data: [
+    {
+      record_date: "2024-01-25",
+      account_type: "Federal Reserve Account",
+      close_today_bal: "750000",
+      open_today_bal: "720000",
+      open_month_bal: "680000",
+      open_fiscal_year_bal: "500000",
+      src_line_nbr: "1",
+      record_fiscal_year: "2024",
+      record_fiscal_quarter: "2",
+      record_calendar_year: "2024",
+      record_calendar_quarter: "1",
+      record_calendar_month: "01",
+      record_calendar_day: "25",
+    },
+  ],
+  meta: {
+    count: 1,
+    labels: { record_date: "Record Date" },
+    dataTypes: { record_date: "DATE" },
+    dataFormats: { record_date: "YYYY-MM-DD" },
+    "total-count": 1,
+    "total-pages": 1,
+  },
+  links: {
+    self: "&page%5Bnumber%5D=1&page%5Bsize%5D=100",
+    first: "&page%5Bnumber%5D=1&page%5Bsize%5D=100",
+    prev: null,
+    next: null,
+    last: "&page%5Bnumber%5D=1&page%5Bsize%5D=100",
+  },
+};
+
+export const EXCHANGE_RATES_RESPONSE = {
+  data: [
+    {
+      record_date: "2024-01-31",
+      country_currency_desc: "Canada-Dollar",
+      exchange_rate: "1.342",
+      effective_date: "2024-01-31",
+      src_line_nbr: "1",
+      record_fiscal_year: "2024",
+      record_fiscal_quarter: "2",
+      record_calendar_year: "2024",
+      record_calendar_quarter: "1",
+      record_calendar_month: "01",
+      record_calendar_day: "31",
+    },
+    {
+      record_date: "2024-01-31",
+      country_currency_desc: "Japan-Yen",
+      exchange_rate: "147.200",
+      effective_date: "2024-01-31",
+      src_line_nbr: "2",
+      record_fiscal_year: "2024",
+      record_fiscal_quarter: "2",
+      record_calendar_year: "2024",
+      record_calendar_quarter: "1",
+      record_calendar_month: "01",
+      record_calendar_day: "31",
+    },
+  ],
+  meta: {
+    count: 2,
+    labels: {
+      record_date: "Record Date",
+      country_currency_desc: "Country - Currency Description",
+      exchange_rate: "Exchange Rate",
+    },
+    dataTypes: {
+      record_date: "DATE",
+      exchange_rate: "NUMBER",
+    },
+    dataFormats: {
+      record_date: "YYYY-MM-DD",
+      exchange_rate: "10.000",
+    },
+    "total-count": 200,
+    "total-pages": 100,
+  },
+  links: {
+    self: "&page%5Bnumber%5D=1&page%5Bsize%5D=2",
+    first: "&page%5Bnumber%5D=1&page%5Bsize%5D=2",
+    prev: null,
+    next: "&page%5Bnumber%5D=2&page%5Bsize%5D=2",
+    last: "&page%5Bnumber%5D=100&page%5Bsize%5D=2",
+  },
+};
+
+export const MTS_TABLE1_RESPONSE = {
+  data: [
+    {
+      record_date: "2024-01-31",
+      parent_id: "0",
+      classification_id: "1",
+      classification_desc: "Individual Income Taxes",
+      current_month_receipts_amt: "200000",
+      current_month_outlays_amt: "0",
+      current_month_surplus_deficit_amt: "200000",
+      current_fytd_receipts_amt: "800000",
+      current_fytd_outlays_amt: "0",
+      current_fytd_surplus_deficit_amt: "800000",
+      prior_fytd_receipts_amt: "750000",
+      prior_fytd_outlays_amt: "0",
+      prior_fytd_surplus_deficit_amt: "750000",
+      record_fiscal_year: "2024",
+      record_fiscal_quarter: "2",
+      record_calendar_year: "2024",
+      record_calendar_quarter: "1",
+      record_calendar_month: "01",
+      record_calendar_day: "31",
+    },
+  ],
+  meta: {
+    count: 1,
+    labels: { record_date: "Record Date" },
+    dataTypes: { record_date: "DATE" },
+    dataFormats: { record_date: "YYYY-MM-DD" },
+    "total-count": 1,
+    "total-pages": 1,
+  },
+  links: {
+    self: "&page%5Bnumber%5D=1&page%5Bsize%5D=100",
+    first: "&page%5Bnumber%5D=1&page%5Bsize%5D=100",
+    prev: null,
+    next: null,
+    last: "&page%5Bnumber%5D=1&page%5Bsize%5D=100",
+  },
+};
+
+export const DEPOSITS_RESPONSE = {
+  data: [
+    {
+      record_date: "2024-01-25",
+      transaction_type: "Deposits",
+      transaction_catg: "A",
+      transaction_catg_desc: "Federal Tax Deposits",
+      transaction_today_amt: "15000",
+      transaction_mtd_amt: "350000",
+      transaction_fytd_amt: "1200000",
+      src_line_nbr: "1",
+      record_fiscal_year: "2024",
+      record_fiscal_quarter: "2",
+      record_calendar_year: "2024",
+      record_calendar_quarter: "1",
+      record_calendar_month: "01",
+      record_calendar_day: "25",
+    },
+  ],
+  meta: {
+    count: 1,
+    labels: { record_date: "Record Date" },
+    dataTypes: { record_date: "DATE" },
+    dataFormats: { record_date: "YYYY-MM-DD" },
+    "total-count": 1,
+    "total-pages": 1,
+  },
+  links: {
+    self: "&page%5Bnumber%5D=1&page%5Bsize%5D=100",
+    first: "&page%5Bnumber%5D=1&page%5Bsize%5D=100",
+    prev: null,
+    next: null,
+    last: "&page%5Bnumber%5D=1&page%5Bsize%5D=100",
+  },
+};
