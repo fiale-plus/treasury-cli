@@ -71,7 +71,7 @@ describe("CLI integration (live API)", () => {
   });
 
   it("treasury rates returns interest rate data", async () => {
-    const { stdout } = await run(["rates", "--limit", "5"]);
+    const { stdout } = await run(["rates", "--limit", "5", "--sort", "-record_date"]);
     const data = JSON.parse(stdout);
     assert.ok(Array.isArray(data.data));
     assert.ok(data.data.length > 0);
