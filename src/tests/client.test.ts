@@ -127,7 +127,7 @@ describe("TreasuryClient", () => {
       mockFetch(AVG_INTEREST_RATES_RESPONSE);
       const result = await client.getAvgInterestRates();
       const url = getCalledUrl();
-      assert.equal(url.pathname, "/services/api/fiscal_service/v1/accounting/od/avg_interest_rates");
+      assert.equal(url.pathname, "/services/api/fiscal_service/v2/accounting/od/avg_interest_rates");
       assert.equal(result.data.length, 2);
     });
 

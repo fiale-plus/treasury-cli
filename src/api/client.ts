@@ -69,7 +69,7 @@ export class TreasuryClient {
   }
 
   async getAvgInterestRates(params: QueryParams = {}): Promise<TreasuryResponse> {
-    return this.request("v1/accounting/od/avg_interest_rates", params);
+    return this.request("v2/accounting/od/avg_interest_rates", params);
   }
 
   async getMspdTable1(params: QueryParams = {}): Promise<TreasuryResponse> {

@@ -16,7 +16,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsx src/cli.ts",
-    "test": "tsx --test src/tests/*.test.ts",
+    "test": "tsx --test src/tests/client.test.ts src/tests/cli.test.ts",
     "test:watch": "tsx --test --watch src/tests/*.test.ts",
     "test:integration": "tsx --test src/tests/integration.test.ts",
     "prepublishOnly": "npm run build && npm test",
